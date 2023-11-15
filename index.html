@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+  </head>
+  <script defer src="./index.js"></script>
+
+  <body>
+    <div class="">
+      <nav class="navbar bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand"><b>E-Commerce</b></a>
+          <form class="d-flex" role="Search for products">
+            <input class="form-control me-2" type="Search for products" placeholder="Search for products" aria-label="Search for products">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+  <!--LOGIN WITH RESPONSIVE REGISTER-->
+    <div class="container mt-3">
+        <label><h3>Login</h3></label>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button type="button" class="btn btn-outline-primary mt-1">Login</button>
+          <a type="button"  class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+          <a href="#" class="text-decoration-underline">Forgot password?</a> 
+
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create account</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="txtModalEmail" placeholder="name@example.com">
+                        <label for="txtModalEmail">Email Address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="txtModalName" placeholder="name">
+                        <label for="txtModalName">Name</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="txtModalPassword" placeholder="Password">
+                        <label for="txtModalPassword">Password</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="txtModalConfirmPassword" placeholder="Password">
+                        <label for="txtModalConfirmPassword">Confirm Password</label>
+                      </div>
+                      <div class="container mt-3">
+                      <div class="mt-2 row">
+                        <label for="radioGender">Gender</label>
+                        <div class="form-check col-4">
+                          <input class="form-check-input" value="rather" type="radio" name="radioGender" id="ratherRadio" checked>
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Rather not say
+                          </label>
+                        </div>
+                        <div class="form-check col-4">
+                          <input class="form-check-input" value="male" type="radio" name="radioGender" id="maleRadio">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            Male
+                          </label>
+                        </div>
+                        <div class="form-check col-4">
+                          <input class="form-check-input" value="female" type="radio" name="radioGender" id="femaleRadio">
+                          <label class="form-check-label" for="flexRadioDefault2">
+                            Female
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <div class="form-floating">
+                      <select id="modalSelect" class="form-select" aria-label="Default select example">
+                        <option value="0" selected>Select year level...</option>
+                        <option value="1">1st Year</option>
+                        <option value="2">2nd Year</option>
+                        <option value="3">3rd Year</option>
+                        <option value="4">4th Year</option>
+                      </select>
+                      <label for="floatingSelect">Year Level</label>
+                      </div>
+                  </div>
+                  <div class="mt-3">
+                    <div class="input-group">
+                      <span class="input-group-text">Address</span>
+                      <textarea id="modalTextArea" class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <div class="form-floating mb-3">
+                      <input type="date" class="form-control" id="modalDate" placeholder="Birthdate">
+                      <label for="floatingDate">Birthdate</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button id="btnModalRegister" type="button" class="btn btn-success">Register</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<br>
+<div class="text-center container py-5">
+  <h4 class="mt-4 mb-5 " style="color: #FFFFFF;"><strong><H1>L+N</H1></strong></h4>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="	https://mn-la.com/cdn/shop/files/8_0120ea18-f263-45c7-98f2-ac07fbafbc3b_530x@2x.jpg?v=1688004791"
+            class="w-100" />
+        </div>
+        <div class="card-body">
+
+           <h5 class="card-title mb-3" >"MULTI M'$" OVERSIZED TEE V2 IN NAVY</h5>
+
+          <a href="" class="text-reset">
+            <p>Oversized Tees</p>
+          </a>
+          <h6 class="mb-3">₱1,270.00</h6>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add to cart
+             </button>
+
+
+        </div>
+      </div>    
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+          data-mdb-ripple-color="light">
+          <img src="	https://mn-la.com/cdn/shop/files/8_ed61a1ce-ba97-402b-a30c-c0e3dbf2914d_530x@2x.jpg?v=1684037190"
+            class="w-100" />
+        </div>
+        <div class="card-body">
+
+            <h5 class="card-title mb-3">VINTAGE TEE IN CAMEL BROWN</h5>
+
+          <a href="" class="text-reset">
+            <p>Vintage Tees</p>
+          </a>
+          <h6 class="mb-3">₱870.00</h6>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add to cart
+          </button>                
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+          <img src="https://mn-la.com/cdn/shop/products/1_1faa8dea-36b3-446e-877d-8729ef83c8bf_530x@2x.png?v=1673856173"
+            class="w-100" />
+        </div>
+        <div class="card-body">
+
+            <h5 class="card-title mb-3">"CONTEMPO RETRO 2 PEACE"</h5>
+
+          <a href="" class="text-reset">
+            <p>Hoodies</p>
+          </a>
+          <h6 class="mb-3">₱1,840.00</h6>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add to cart
+          </button>  
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+          <img src="https://mn-la.com/cdn/shop/products/2_5b534207-0d0e-4920-9ea3-e9427851ccc3_530x@2x.png?v=1676687020"
+            class="w-100" />
+        </div>
+        <div class="card-body">
+
+            <h5 class="card-title mb-3">"PAINTER'S SWEATPANTS IN WOOD"</h5>
+
+          <a href="" class="text-reset">
+            <p>Sweatpants</p>
+          </a>
+          <h6 class="mb-3">₱1,370.00</h6>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add to cart
+          </button>  
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+          <img src="https://mn-la.com/cdn/shop/files/8_4fb11016-174e-419f-8cc8-12faa58e7aa0_530x@2x.jpg?v=1691900281"
+            class="w-100" />
+        </div>
+        <div class="card-body">
+
+            <h5 class="card-title mb-3">"CONTRAST CLASSIC HOODIE IN WOOD"</h5>
+
+          <a href="" class="text-reset">
+            <p>Hoodies</p>
+          </a>
+          <h6 class="mb-3">₱1,870.00</h6>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add to cart
+          </button>  
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card">
+        <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+          <img src="	https://mn-la.com/cdn/shop/files/10_14a5bfab-01d3-4b03-b1d5-2afcdbc599d9_530x@2x.jpg?v=1691494210"
+            class="w-100" />
+        </div>
+        <div class="card-body">
+
+            <h5 class="card-title mb-3">"CLASSIC SWEATSHIRT V2 IN CHESTNUT"</h5>
+
+          <a href="" class="text-reset">
+            <p>Sweatshirts</p>
+          </a>
+          <h6 class="mb-3">₱1,370.00</h6>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"> Add to cart
+          </button>  
+        </div>
+      </div>
+    </div>
+
+    <div  class="d-grid gap-2 d-md-flex justify-content-md-end">            
+        <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#addModal">Add Products</button>      
+        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <html>
+<head>
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+*,
+::before,
+::after {
+box-sizing: border-box;
+border-width: 0;
+border-style: solid;
+border-color: #ffffff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h2 class="mt-4">Product Form</h2>
+<form>
+<div class="mb-4">
+<label for="productName" class="form-label">Product Name</label>
+<input type="text" class="form-control" id="productName" placeholder="Enter product name" required="">
+</div>
+
+<div class="mb-4">
+<label for="productCategory" class="form-label">Product Category</label>
+<input type="text" class="form-control" id="productCategory" placeholder="Enter product category (ex. Hoodies)" required="">
+</div>
+
+<div class="mb-4">
+<label for="price">Product Price</label>
+<div class="input-group">
+<div class="input-group-prepend">
+    <span class="input-group-text">$</span>
+</div>
+<input type="text" class="form-control" id="price" placeholder="Enter Product Price (ex. *,***.**)" required="">
+</div>
+
+<div class="mt-4">
+<label for="productImage" class="form-label">Product Image</label>
+<input type="file" class="form-control" id="productImage" required="">
+</div>
+<div class="mt-5">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+<button type="submit" class="btn btn-primary">Save</button>
+</div>
+
+</form>
+</div>
+</body>
+</html>
+
+            </div>
+          </div>
+        </div>               
+    </div> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
